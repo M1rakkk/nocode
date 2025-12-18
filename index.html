@@ -1,105 +1,241 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-    (function(m,e,t,r,i,k,a){
-        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-        m[i].l=1*new Date();
-        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
-    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=105906873', 'ym');
-    ym(105906873, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/105906873" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Народный трекер: Реальное отслеживание автобусов</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Народный трекер общественного транспорта</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function(m,e,t,r,i,k,a){
+            m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();
+            for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+            k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+        })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=105906873', 'ym');
+
+        ym(105906873, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/105906873" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
 </head>
 <body>
-    <!-- Hero -->
-    <section class="hero">
-        <div class="container text-center">
-            <h1 class="fade-in">Народный трекер: Следи за автобусами в реальном времени!</h1>
-            <p class="fade-in">Пассажиры и водители делятся данными — забудь о ложных GPS!</p>
-            <a href="#register" class="btn cta-btn btn-lg fade-in">Зарегистрироваться</a>
-        </div>
-    </section>
-
-    <!-- Проблема -->
-    <section class="section bg-light" id="problem">
+    <!-- Hero Section -->
+    <header class="hero bg-primary text-white text-center py-5">
         <div class="container">
-            <h2>Устал ждать автобус?</h2>
-            <p>Приложения часто врут из-за пробок. Опаздывай реже!</p>
-            <img src="images/problem-stop.jpg" alt="Остановка" class="img-fluid rounded">
+            <h1 class="display-4 fw-bold">Народный трекер общественного транспорта</h1>
+            <p class="lead">Реальное отслеживание от пассажиров и водителей – забудьте о неопределенности!</p>
+            <a href="#registration" class="btn btn-light btn-lg mt-3">Зарегистрироваться</a>
         </div>
-    </section>
+    </header>
 
-    <!-- Решение -->
-    <section class="section" id="solution">
+    <!-- Problem and Situation Section -->
+    <section id="problem" class="py-5">
         <div class="container">
-            <h2>Как работает</h2>
-            <div class="row text-center">
-                <div class="col-md-4"><h4>Отметь прибытие</h4><p>Пассажиры кликают в app.</p></div>
-                <div class="col-md-4"><h4>Подтверди маршрут</h4><p>Водители обновляют.</p></div>
-                <div class="col-md-4"><h4>Актуальная карта</h4><p>Для всех пользователей.</p></div>
+            <h2 class="text-center mb-4">Проблема и ситуация</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Проблема</h3>
+                    <p>Отслеживание общественного транспорта. Автобусы часто приезжают не по расписанию, их местоположение в реальном времени в приложениях иногда неправильное или отсутствует.</p>
+                </div>
+                <div class="col-md-6">
+                    <h3>Ситуация</h3>
+                    <p>Пассажиры сталкиваются с неопределенностью, тратят время на бесполезное ожидание, опаздывают на работу, учебу или встречи из-за ненадежных GPS-данных в существующих сервисах, подверженных сбоям от пробок, погоды или технических проблем. Это особенно актуально в крупных городах с высокой зависимостью от общественного транспорта.</p>
+                </div>
             </div>
-            <img src="images/solution-map.jpg" alt="Карта" class="img-fluid rounded mt-3">
         </div>
     </section>
 
-    <!-- Вкладка 1: Карта в реальном времени -->
-    <section class="section bg-light" id="tab1">
+    <!-- Solution Section -->
+    <section id="solution" class="py-5 bg-light">
         <div class="container">
-            <h2>Вкладка 1: Карта в реальном времени</h2>
-            <p>С первого экрана получай решение: движение автобусов, прогноз («Ваш автобус через 4 мин») и загрузка («Свободно / Средне / Переполнен»).</p>
-            <p>Как продаём: Хочу знать, едет автобус или нет — сразу видимая польза!</p>
-            <img src="images/tab1-map.jpg" alt="Карта в реальном времени" class="img-fluid rounded">
+            <h2 class="text-center mb-4">Решение</h2>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <i class="fas fa-users fa-3x mb-3 text-primary"></i>
+                    <p>Система совместного отслеживания на основе отчетов от пассажиров и водителей.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-map-marker-alt fa-3x mb-3 text-primary"></i>
+                    <p>Пассажиры отмечают в мобильном приложении прибытие автобуса на остановку.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-check-circle fa-3x mb-3 text-primary"></i>
+                    <p>Водители подтверждают маршрут и текущее положение через простой интерфейс.</p>
+                </div>
+            </div>
+            <p class="text-center mt-4">Результат: Актуальная интерактивная карта с данными от реальных участников, дополняющая GPS для повышенной точности и надежности.</p>
         </div>
     </section>
 
-    <!-- Вкладка 2: Мои маршруты -->
-    <section class="section" id="tab2">
+    <!-- Mini-Startup and Audience Section -->
+    <section id="startup" class="py-5">
         <div class="container">
-            <h2>Вкладка 2: Мои маршруты (для удержания)</h2>
-            <p>Добавь избранные маршруты/остановки, получай уведомления («Автобус №49 через 3 мин») и предупреждения о задержках.</p>
-            <p>Как продаём: Приложение работает за тебя ежедневно — «Больше ни одной пропущенной маршрутки, мы напомним».</p>
-            <img src="images/tab2-routes.jpg" alt="Мои маршруты" class="img-fluid rounded">
+            <h2 class="text-center mb-4">Мини-стартап и аудитория</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Мини-стартап</h3>
+                    <p>Приложение "Народный трекер общественного транспорта" (MVP: мобильное приложение с картой, пользовательскими отметками и уведомлениями). Для привлечения первых пользователей создадим промо-сайт на Netlify (статический лендинг с описанием, скриншотами, формой регистрации и ссылками на скачивание), подходящий для быстрого деплоя через GitHub.</p>
+                </div>
+                <div class="col-md-6">
+                    <h3>Аудитория</h3>
+                    <p>Студенты, школьники, рабочие (возраст 16–35 лет), жители мегаполисов (Москва, Санкт-Петербург, Екатеринбург и т.д.), активно использующие общественный транспорт. B2C-сегмент: мобильные пользователи, ищущие бесплатные или недорогие решения для ежедневных проблем.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Вкладка 3: Пробки и состояние дорог -->
-    <section class="section bg-light" id="tab3">
+    <!-- Traffic Sources and Analytics Table Section -->
+    <section id="traffic" class="py-5 bg-light">
         <div class="container">
-            <h2>Вкладка 3: Пробки и состояние дорог</h2>
-            <p>Узнай о авариях, перекрытиях и рекомендациях маршрутов. Приложение становится навигационным помощником.</p>
-            <p>Как продаём: Не просто трекер, а умный гид по городу!</p>
-            <img src="images/tab3-traffic.jpg" alt="Пробки" class="img-fluid rounded">
+            <h2 class="text-center mb-4">Выбор источников трафика и таблица сквозной аналитики</h2>
+            <p>Выбранные источники трафика (3 наиболее подходящих для B2C-продукта на этапе MVP: органический рост, низкие затраты, локальный фокус):</p>
+            <ul>
+                <li>Посты в сообществах (городские паблики ВКонтакте и Telegram-чаты для обсуждения транспорта).</li>
+                <li>Аккаунты в соцсетях (SMM) — Telegram-канал или чат (для сообщества, обновлений и вирусного распространения).</li>
+                <li>Статья в чужом паблике/канале (бесплатная) — Форумы и тематические площадки (Pikabu, vc.ru, Хабр) (для экспертных публикаций о проблемах транспорта).</li>
+            </ul>
+            <p>Эти источники идеальны для старта: бесплатны, ориентированы на целевую аудиторию, обеспечивают быстрый охват через репосты и обсуждения, с высоким потенциалом конверсии в регистрации.</p>
+            <h3 class="mt-4">Таблица сквозной аналитики</h3>
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Источник трафика</th>
+                            <th>Охват (CPM, руб./1000 просмотров)</th>
+                            <th>Конверсия CTR (%) / Входящий трафик (чел.)</th>
+                            <th>Конверсия в регистрацию (%) / Пользователи (чел.)</th>
+                            <th>Активные пользователи (DAU/MAU, %)</th>
+                            <th>Конверсия в оплату (%) / Платящие пользователи (чел.)</th>
+                            <th>CPA (руб. за регистрацию)</th>
+                            <th>Общие затраты (руб.)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Посты в сообществах (ВК/Telegram)</td>
+                            <td>1000 чел. (бесплатно или 1 руб./CPM)</td>
+                            <td>5% / 50 чел.</td>
+                            <td>20% / 10 чел.</td>
+                            <td>60% (6/10)</td>
+                            <td>30% / 3 чел.</td>
+                            <td>100 руб.</td>
+                            <td>100–200 (бусты)</td>
+                        </tr>
+                        <tr>
+                            <td>Аккаунты в соцсетях (Telegram-канал/чат)</td>
+                            <td>1000 чел. (бесплатно через репосты)</td>
+                            <td>20% / 200 чел.</td>
+                            <td>10% / 20 чел.</td>
+                            <td>50% (10/20)</td>
+                            <td>20% / 4 чел.</td>
+                            <td>50 руб.</td>
+                            <td>Бесплатно</td>
+                        </tr>
+                        <tr>
+                            <td>Статья в чужом паблике/канале (Pikabu, vc.ru)</td>
+                            <td>1000 чел. (бесплатно гостевые посты)</td>
+                            <td>10% / 100 чел.</td>
+                            <td>25% / 25 чел.</td>
+                            <td>40% (10/25)</td>
+                            <td>15% / 4 чел.</td>
+                            <td>40 руб.</td>
+                            <td>Бесплатно</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h3 class="mt-4">Обоснование таблицы</h3>
+            <p>Охват и трафик: Бесплатные каналы для минимизации затрат, с фокусом на органику.</p>
+            <p>Конверсии: Увеличиваем через релевантный контент (посты с проблемами транспорта, ссылками на сайт).</p>
+            <p>Структура: От охвата к лидам, регистрациям, активным пользователям и оплатам.</p>
+            <p>Улучшения: Маркетинг — вирусные тексты; Дизайн — CTA на сайте; Разработка — аналитика для отслеживания.</p>
         </div>
     </section>
 
-    <!-- CTA -->
-    <section class="section bg-primary text-white" id="register">
-        <div class="container text-center">
-            <h2>Присоединяйся к сообществу!</h2>
-            <form action="https://formspree.io/f/ВАШ-FORM-ID" method="POST">
-                <input type="email" name="email" placeholder="Ваш email" class="form-control d-inline-block w-50">
-                <button type="submit" class="btn cta-btn ms-2">Подписаться</button>
+    <!-- Monetization Strategy Section -->
+    <section id="monetization" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Стратегия монетизации</h2>
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Модель монетизации</th>
+                            <th>Описание</th>
+                            <th>Преимущества</th>
+                            <th>Недостатки</th>
+                            <th>Подходит для этапа первых 1000 пользователей?</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Freemium</td>
+                            <td>Free-версия с базовым отслеживанием (решает основную боль), премиум — уведомления, история, без рекламы.</td>
+                            <td>Низкий барьер, вирусный рост; конверсия 10–20% в paid; тестирование ценности.</td>
+                            <td>Free может удовлетворить большинство; нужно балансировать фичи.</td>
+                            <td>Да: Привлекает трафик, 5–10% конвертируются в клиентов.</td>
+                        </tr>
+                        <tr>
+                            <td>Подписная модель (за период)</td>
+                            <td>Ежемесячная подписка (99 руб./мес.) за полный доступ.</td>
+                            <td>Стабильный доход, удержание лояльных.</td>
+                            <td>Высокий отток на старте; барьер для новых юзеров.</td>
+                            <td>Частично: Как основная после freemium, для 5–15% лояльных.</td>
+                        </tr>
+                        <tr>
+                            <td>Реклама</td>
+                            <td>Встроенные баннеры от партнеров (такси, карты) в free-версии.</td>
+                            <td>Монетизация без прямой оплаты; зависит от трафика.</td>
+                            <td>Может раздражать, снижать retention.</td>
+                            <td>Да: Дополнительная для free-трафика (CPM 1–5 руб.), на старте.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h3 class="mt-4">Обоснование выбора</h3>
+            <p>Основная модель: Freemium — идеальна для B2C и первых 1000: обеспечивает рост (free решает боль, привлекает через трафик), мотивирует апгрейд (доп.фичи), конверсия ~10% в клиентов/сделки.</p>
+            <p>Дополнительная модель: Реклама + подписка. Реклама монетизирует free без барьера (6–17% от трафика в доход), подписка — апселл для лояльных после триала (7 дней премиум). Это минимизирует риски, дает 1–100 первых клиентов.</p>
+        </div>
+    </section>
+
+    <!-- Registration Form Section -->
+    <section id="registration" class="py-5 bg-primary text-white text-center">
+        <div class="container">
+            <h2 class="mb-4">Зарегистрируйтесь сейчас!</h2>
+            <form class="row g-3 justify-content-center">
+                <div class="col-md-6">
+                    <input type="email" class="form-control" placeholder="Ваш email" required>
+                </div>
+                <div class="col-md-3">
+                    <button type="submit" class="btn btn-light btn-lg">Зарегистрироваться</button>
+                </div>
             </form>
+            <p class="mt-3">Скачайте приложение: <a href="#" class="text-white">App Store</a> | <a href="#" class="text-white">Google Play</a></p>
         </div>
     </section>
 
-    <!-- Футер -->
-    <footer class="bg-dark text-white py-3">
-        <div class="container text-center">
-            <p>info@narodny-treker.ru | Telegram: @narodnytreker</p>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>&copy; 2025 Народный трекер. Все права защищены.</p>
+            <div>
+                <a href="#" class="text-white mx-2"><i class="fab fa-telegram"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-vk"></i></a>
+            </div>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!-- Custom JS (optional for animations) -->
+    <script src="script.js"></script>
 </body>
 </html>
