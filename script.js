@@ -23,5 +23,6 @@ document.addEventListener('DOMContentLoaded', function() {
     form.addEventListener('submit', function(e) {
         e.preventDefault();
         alert('Спасибо за регистрацию!');
+        // Здесь можно добавить интеграцию с Google Sheets или email
     });
 });

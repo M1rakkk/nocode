@@ -41,3 +41,8 @@ section.visible {
     opacity: 1;
     transform: translateY(0);
 }
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
