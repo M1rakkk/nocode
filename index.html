@@ -8,6 +8,9 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
   <!-- Yandex.Metrika -->
   <script type="text/javascript">
     (function(m,e,t,r,i,k,a){
@@ -30,211 +33,42 @@
   <noscript>
     <img src="https://mc.yandex.ru/watch/105906873" style="position:absolute;left:-9999px;" alt="">
   </noscript>
-
-  <style>
-    :root{
-      --bg-main:#0b0b0e;
-      --bg-card:#141418;
-      --text-main:#f3f4f6;
-      --text-muted:#9ca3af;
-      --border:#23232a;
-      --accent:#22d3ee;
-    }
-
-    *{box-sizing:border-box;margin:0;padding:0}
-
-    body{
-      font-family:'Inter',sans-serif;
-      background:var(--bg-main);
-      color:var(--text-main);
-      line-height:1.7;
-    }
-
-    .container{
-      max-width:1100px;
-      margin:0 auto;
-      padding:0 20px;
-    }
-
-    header{
-      padding:110px 0 90px;
-      text-align:center;
-    }
-
-    header h1{
-      font-size:44px;
-      max-width:900px;
-      margin:0 auto 24px;
-      letter-spacing:-0.02em;
-    }
-
-    header p{
-      font-size:19px;
-      color:var(--text-muted);
-      max-width:760px;
-      margin:0 auto 40px;
-    }
-
-    .btn{
-      background:var(--accent);
-      color:#020617;
-      padding:16px 34px;
-      border-radius:14px;
-      font-weight:600;
-      text-decoration:none;
-      transition:.2s;
-    }
-
-    .btn:hover{opacity:.85}
-
-    section{padding:90px 0}
-
-    h2{
-      font-size:34px;
-      text-align:center;
-      margin-bottom:22px;
-    }
-
-    .subtitle{
-      text-align:center;
-      color:var(--text-muted);
-      max-width:760px;
-      margin:0 auto 70px;
-      font-size:18px;
-    }
-
-    .grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-      gap:28px;
-    }
-
-    .card{
-      background:var(--bg-card);
-      padding:34px;
-      border-radius:18px;
-      border:1px solid var(--border);
-    }
-
-    .card h3{
-      font-size:20px;
-      margin-bottom:14px;
-    }
-
-    .card p{color:var(--text-muted)}
-
-    .step{
-      text-align:center;
-    }
-
-    .step span{
-      display:inline-flex;
-      width:48px;
-      height:48px;
-      border-radius:50%;
-      background:var(--accent);
-      color:#020617;
-      align-items:center;
-      justify-content:center;
-      font-weight:700;
-      margin-bottom:18px;
-    }
-
-    .cta{
-      background:#020617;
-      text-align:center;
-      padding:100px 20px;
-    }
-
-    .cta p{
-      color:var(--text-muted);
-      margin-bottom:34px;
-      font-size:18px;
-    }
-
-    form{
-      max-width:420px;
-      margin:0 auto;
-      display:flex;
-      gap:10px;
-    }
-
-    input{
-      flex:1;
-      padding:16px;
-      border-radius:10px;
-      border:none;
-      background:#0b1220;
-      color:white;
-    }
-
-    button{
-      padding:16px 22px;
-      border-radius:10px;
-      border:none;
-      background:var(--accent);
-      font-weight:600;
-      cursor:pointer;
-    }
-
-    footer{
-      padding:30px 0;
-      text-align:center;
-      font-size:14px;
-      color:var(--text-muted);
-      border-top:1px solid var(--border);
-    }
-
-    @media(max-width:600px){
-      header h1{font-size:32px}
-    }
-  </style>
 </head>
 
 <body>
 
 <header>
   <div class="container">
-    <h1>Ты не должен угадывать, приедет автобус или нет</h1>
-    <p>
+    <h1 class="fade-up">Ты не должен угадывать, приедет автобус или нет</h1>
+    <p class="fade-up fade-delay-1">
       Народный трекер общественного транспорта — сервис,
       который показывает реальную ситуацию на маршрутах
       на основе данных от пассажиров и водителей,
-      а не только сухих GPS-координат.
+      а не только GPS.
     </p>
-    <a href="#signup" class="btn">Получить ранний доступ</a>
+    <a href="#signup" class="btn fade-up fade-delay-2">Получить ранний доступ</a>
   </div>
 </header>
 
 <section>
   <div class="container">
-    <h2>Почему мы вообще это делаем</h2>
-    <p class="subtitle">
-      Почти каждый сталкивался с ситуацией, когда приложение обещает автобус,
-      но он либо задерживается, либо исчезает с карты.
-      Мы считаем, что так быть не должно.
+    <h2 class="fade-up">Почему это проблема</h2>
+    <p class="subtitle fade-up fade-delay-1">
+      Каждый, кто пользуется общественным транспортом,
+      сталкивался с неопределённостью и потерей времени.
     </p>
     <div class="grid">
-      <div class="card">
+      <div class="card fade-up fade-delay-1">
         <h3>Ожидание вслепую</h3>
-        <p>
-          Ты стоишь на остановке и не понимаешь —
-          ждать ещё пять минут или уходить.
-        </p>
+        <p>Ты стоишь на остановке и не понимаешь, стоит ли ждать дальше.</p>
       </div>
-      <div class="card">
-        <h3>Неточным данным нельзя верить</h3>
-        <p>
-          GPS часто ошибается в плотной городской застройке
-          и во время пробок.
-        </p>
+      <div class="card fade-up fade-delay-2">
+        <h3>Неточные данные</h3>
+        <p>GPS часто ошибается в городе и во время пробок.</p>
       </div>
-      <div class="card">
-        <h3>Потеря времени и нервов</h3>
-        <p>
-          Опоздания на учёбу, работу и встречи
-          стали нормой.
-        </p>
+      <div class="card fade-up fade-delay-3">
+        <h3>Потеря времени</h3>
+        <p>Опоздания становятся нормой, а доверие к приложениям падает.</p>
       </div>
     </div>
   </div>
@@ -242,32 +76,25 @@
 
 <section>
   <div class="container">
-    <h2>Как мы решаем эту проблему</h2>
-    <p class="subtitle">
-      Мы дополняем технологии реальными людьми
+    <h2 class="fade-up">Как мы решаем эту задачу</h2>
+    <p class="subtitle fade-up fade-delay-1">
+      Мы объединили технологии и реальных людей
     </p>
     <div class="grid">
-      <div class="step card">
+      <div class="card step fade-up fade-delay-1">
         <span>1</span>
         <h3>Пассажиры</h3>
-        <p>
-          Отмечают прибытие транспорта и своё движение по маршруту.
-        </p>
+        <p>Отмечают прибытие транспорта и поездку.</p>
       </div>
-      <div class="step card">
+      <div class="card step fade-up fade-delay-2">
         <span>2</span>
         <h3>Водители</h3>
-        <p>
-          Подтверждают маршрут и статус движения через простой интерфейс.
-        </p>
+        <p>Подтверждают маршрут и движение.</p>
       </div>
-      <div class="step card">
+      <div class="card step fade-up fade-delay-3">
         <span>3</span>
         <h3>Общая картина</h3>
-        <p>
-          Ты видишь актуальную информацию,
-          основанную на живых данных.
-        </p>
+        <p>Ты видишь реальную ситуацию на карте.</p>
       </div>
     </div>
   </div>
@@ -275,73 +102,33 @@
 
 <section>
   <div class="container">
-    <h2>Для кого этот сервис</h2>
-    <p class="subtitle">
-      Для всех, кто пользуется общественным транспортом и ценит своё время
+    <h2 class="fade-up">Для кого этот сервис</h2>
+    <p class="subtitle fade-up fade-delay-1">
+      Для людей, которые ценят своё время
     </p>
     <div class="grid">
-      <div class="card">
-        <h3>Студенты и школьники</h3>
-        <p>
-          Чтобы не опаздывать на пары и не стоять на холоде без понимания ситуации.
-        </p>
+      <div class="card fade-up fade-delay-1">
+        <h3>Студенты</h3>
+        <p>Чтобы не опаздывать на учёбу.</p>
       </div>
-      <div class="card">
+      <div class="card fade-up fade-delay-2">
         <h3>Работающие люди</h3>
-        <p>
-          Чтобы заранее планировать маршрут и принимать решение быстрее.
-        </p>
+        <p>Чтобы заранее понимать ситуацию на маршруте.</p>
       </div>
-      <div class="card">
+      <div class="card fade-up fade-delay-3">
         <h3>Горожане</h3>
-        <p>
-          Для всех, кто ежедневно зависит от автобусов, трамваев и маршруток.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="container">
-    <h2>Как проект будет развиваться</h2>
-    <p class="subtitle">
-      Мы начинаем с главного — точных данных,
-      и постепенно расширяем возможности сервиса
-    </p>
-    <div class="grid">
-      <div class="card">
-        <h3>Бесплатная версия</h3>
-        <p>
-          Основной функционал доступен всем пользователям
-          и решает главную боль.
-        </p>
-      </div>
-      <div class="card">
-        <h3>Премиум-функции</h3>
-        <p>
-          Уведомления, история поездок,
-          персональные маршруты и отсутствие рекламы.
-        </p>
-      </div>
-      <div class="card">
-        <h3>Монетизация</h3>
-        <p>
-          Freemium-модель, подписка и реклама
-          без ущерба пользовательскому опыту.
-        </p>
+        <p>Для всех, кто ежедневно пользуется транспортом.</p>
       </div>
     </div>
   </div>
 </section>
 
 <section class="cta" id="signup">
-  <h2>Мы запускаемся скоро</h2>
-  <p>
-    Оставь email — ты первым узнаешь о старте
-    и сможешь повлиять на развитие сервиса
+  <h2 class="fade-up">Мы запускаемся скоро</h2>
+  <p class="fade-up fade-delay-1">
+    Оставь email — ты первым узнаешь о запуске
   </p>
-  <form>
+  <form class="fade-up fade-delay-2">
     <input type="email" placeholder="Ваш email" required>
     <button type="submit">Уведомить меня</button>
   </form>
