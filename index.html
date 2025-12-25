@@ -8,19 +8,19 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- Yandex.Metrika counter -->
+  <!-- Yandex.Metrika -->
   <script type="text/javascript">
     (function(m,e,t,r,i,k,a){
-        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-        m[i].l=1*new Date();
-        for (var j = 0; j < document.scripts.length; j++) {
-          if (document.scripts[j].src === r) { return; }
-        }
-        k=e.createElement(t),a=e.getElementsByTagName(t)[0],
-        k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
-    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=105906873', 'ym');
+      m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+      m[i].l=1*new Date();
+      for (var j=0;j<document.scripts.length;j++){
+        if (document.scripts[j].src===r){return;}
+      }
+      k=e.createElement(t),a=e.getElementsByTagName(t)[0];
+      k.async=1;k.src=r;a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=105906873','ym');
 
-    ym(105906873, 'init', {
+    ym(105906873,'init',{
       clickmap:true,
       trackLinks:true,
       accurateTrackBounce:true,
@@ -28,324 +28,322 @@
     });
   </script>
   <noscript>
-    <div>
-      <img src="https://mc.yandex.ru/watch/105906873" style="position:absolute; left:-9999px;" alt="" />
-    </div>
+    <img src="https://mc.yandex.ru/watch/105906873" style="position:absolute;left:-9999px;" alt="">
   </noscript>
 
   <style>
-    :root {
-      --bg-main: #f9fafb;
-      --bg-white: #ffffff;
-      --text-main: #111827;
-      --text-secondary: #6b7280;
-      --border-soft: #e5e7eb;
-      --accent: #374151;
+    :root{
+      --bg-main:#0b0b0e;
+      --bg-card:#141418;
+      --text-main:#f3f4f6;
+      --text-muted:#9ca3af;
+      --border:#23232a;
+      --accent:#22d3ee;
     }
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
+    *{box-sizing:border-box;margin:0;padding:0}
+
+    body{
+      font-family:'Inter',sans-serif;
+      background:var(--bg-main);
+      color:var(--text-main);
+      line-height:1.7;
     }
 
-    body {
-      font-family: 'Inter', sans-serif;
-      background: var(--bg-main);
-      color: var(--text-main);
-      line-height: 1.6;
+    .container{
+      max-width:1100px;
+      margin:0 auto;
+      padding:0 20px;
     }
 
-    .container {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 0 20px;
+    header{
+      padding:110px 0 90px;
+      text-align:center;
     }
 
-    header {
-      background: var(--bg-white);
-      padding: 90px 0;
-      text-align: center;
-      border-bottom: 1px solid var(--border-soft);
+    header h1{
+      font-size:44px;
+      max-width:900px;
+      margin:0 auto 24px;
+      letter-spacing:-0.02em;
     }
 
-    header h1 {
-      font-size: 40px;
-      margin-bottom: 16px;
-      letter-spacing: -0.02em;
+    header p{
+      font-size:19px;
+      color:var(--text-muted);
+      max-width:760px;
+      margin:0 auto 40px;
     }
 
-    header p {
-      font-size: 18px;
-      color: var(--text-secondary);
-      max-width: 720px;
-      margin: 0 auto 32px;
+    .btn{
+      background:var(--accent);
+      color:#020617;
+      padding:16px 34px;
+      border-radius:14px;
+      font-weight:600;
+      text-decoration:none;
+      transition:.2s;
     }
 
-    .btn {
-      background: var(--accent);
-      color: white;
-      padding: 14px 30px;
-      border-radius: 10px;
-      font-weight: 600;
-      text-decoration: none;
-      transition: 0.2s ease;
-      display: inline-block;
+    .btn:hover{opacity:.85}
+
+    section{padding:90px 0}
+
+    h2{
+      font-size:34px;
+      text-align:center;
+      margin-bottom:22px;
     }
 
-    .btn:hover {
-      background: #1f2937;
-      transform: translateY(-1px);
+    .subtitle{
+      text-align:center;
+      color:var(--text-muted);
+      max-width:760px;
+      margin:0 auto 70px;
+      font-size:18px;
     }
 
-    section {
-      padding: 80px 0;
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:28px;
     }
 
-    section h2 {
-      font-size: 32px;
-      text-align: center;
-      margin-bottom: 16px;
+    .card{
+      background:var(--bg-card);
+      padding:34px;
+      border-radius:18px;
+      border:1px solid var(--border);
     }
 
-    .subtitle {
-      text-align: center;
-      color: var(--text-secondary);
-      max-width: 720px;
-      margin: 0 auto 60px;
+    .card h3{
+      font-size:20px;
+      margin-bottom:14px;
     }
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 30px;
+    .card p{color:var(--text-muted)}
+
+    .step{
+      text-align:center;
     }
 
-    .card {
-      background: var(--bg-white);
-      padding: 32px;
-      border-radius: 16px;
-      border: 1px solid var(--border-soft);
+    .step span{
+      display:inline-flex;
+      width:48px;
+      height:48px;
+      border-radius:50%;
+      background:var(--accent);
+      color:#020617;
+      align-items:center;
+      justify-content:center;
+      font-weight:700;
+      margin-bottom:18px;
     }
 
-    .card h3 {
-      font-size: 20px;
-      margin-bottom: 10px;
+    .cta{
+      background:#020617;
+      text-align:center;
+      padding:100px 20px;
     }
 
-    .card p {
-      color: var(--text-secondary);
+    .cta p{
+      color:var(--text-muted);
+      margin-bottom:34px;
+      font-size:18px;
     }
 
-    .step-number {
-      width: 48px;
-      height: 48px;
-      background: var(--accent);
-      color: white;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 15px;
-      font-weight: 700;
+    form{
+      max-width:420px;
+      margin:0 auto;
+      display:flex;
+      gap:10px;
     }
 
-    .cta {
-      background: #111827;
-      color: white;
-      text-align: center;
-      padding: 90px 20px;
+    input{
+      flex:1;
+      padding:16px;
+      border-radius:10px;
+      border:none;
+      background:#0b1220;
+      color:white;
     }
 
-    .cta p {
-      color: #d1d5db;
-      margin-bottom: 30px;
+    button{
+      padding:16px 22px;
+      border-radius:10px;
+      border:none;
+      background:var(--accent);
+      font-weight:600;
+      cursor:pointer;
     }
 
-    form {
-      max-width: 420px;
-      margin: 0 auto;
-      display: flex;
-      gap: 10px;
+    footer{
+      padding:30px 0;
+      text-align:center;
+      font-size:14px;
+      color:var(--text-muted);
+      border-top:1px solid var(--border);
     }
 
-    input[type="email"] {
-      flex: 1;
-      padding: 14px;
-      border-radius: 8px;
-      border: none;
-    }
-
-    button {
-      padding: 14px 20px;
-      border-radius: 8px;
-      border: none;
-      background: var(--accent);
-      color: white;
-      font-weight: 600;
-      cursor: pointer;
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px 0;
-      font-size: 14px;
-      color: var(--text-secondary);
-      background: var(--bg-white);
-      border-top: 1px solid var(--border-soft);
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 32px;
-      }
+    @media(max-width:600px){
+      header h1{font-size:32px}
     }
   </style>
 </head>
 
 <body>
 
-<!-- HERO -->
 <header>
   <div class="container">
-    <h1>Узнай, едет ли твой автобус — в реальном времени</h1>
+    <h1>Ты не должен угадывать, приедет автобус или нет</h1>
     <p>
-      Народный трекер общественного транспорта.  
-      Реальные данные от пассажиров и водителей, а не только от GPS.
+      Народный трекер общественного транспорта — сервис,
+      который показывает реальную ситуацию на маршрутах
+      на основе данных от пассажиров и водителей,
+      а не только сухих GPS-координат.
     </p>
-    <a href="#signup" class="btn">Стать первым пользователем</a>
+    <a href="#signup" class="btn">Получить ранний доступ</a>
   </div>
 </header>
 
-<!-- PROBLEM -->
 <section>
   <div class="container">
-    <h2>В чём проблема</h2>
+    <h2>Почему мы вообще это делаем</h2>
     <p class="subtitle">
-      Существующие приложения часто показывают неточную информацию о транспорте.
-      В итоге пользователи теряют время и опаздывают.
+      Почти каждый сталкивался с ситуацией, когда приложение обещает автобус,
+      но он либо задерживается, либо исчезает с карты.
+      Мы считаем, что так быть не должно.
     </p>
     <div class="grid">
-      <div class="card">
-        <h3>Неточные данные</h3>
-        <p>GPS может давать сбои, автобус пропадает с карты.</p>
-      </div>
       <div class="card">
         <h3>Ожидание вслепую</h3>
-        <p>Непонятно, стоит ли ждать или искать другой маршрут.</p>
+        <p>
+          Ты стоишь на остановке и не понимаешь —
+          ждать ещё пять минут или уходить.
+        </p>
       </div>
       <div class="card">
-        <h3>Недоверие</h3>
-        <p>Пользователи перестают верить расписаниям и приложениям.</p>
+        <h3>Неточным данным нельзя верить</h3>
+        <p>
+          GPS часто ошибается в плотной городской застройке
+          и во время пробок.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Потеря времени и нервов</h3>
+        <p>
+          Опоздания на учёбу, работу и встречи
+          стали нормой.
+        </p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SOLUTION -->
 <section>
   <div class="container">
-    <h2>Как это работает</h2>
+    <h2>Как мы решаем эту проблему</h2>
     <p class="subtitle">
-      Мы объединяем данные от людей, которые находятся в транспорте прямо сейчас
+      Мы дополняем технологии реальными людьми
     </p>
     <div class="grid">
-      <div class="card" style="text-align:center">
-        <div class="step-number">1</div>
+      <div class="step card">
+        <span>1</span>
         <h3>Пассажиры</h3>
-        <p>Отмечают прибытие автобуса и поездку.</p>
+        <p>
+          Отмечают прибытие транспорта и своё движение по маршруту.
+        </p>
       </div>
-      <div class="card" style="text-align:center">
-        <div class="step-number">2</div>
+      <div class="step card">
+        <span>2</span>
         <h3>Водители</h3>
-        <p>Подтверждают маршрут и движение.</p>
+        <p>
+          Подтверждают маршрут и статус движения через простой интерфейс.
+        </p>
       </div>
-      <div class="card" style="text-align:center">
-        <div class="step-number">3</div>
-        <h3>Пользователи</h3>
-        <p>Видят реальную ситуацию на карте.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FEATURES -->
-<section>
-  <div class="container">
-    <h2>Возможности сервиса</h2>
-    <p class="subtitle">Функции, которые решают основную боль пользователя</p>
-    <div class="grid">
-      <div class="card">
-        <h3>Карта в реальном времени</h3>
-        <p>Актуальное движение транспорта и прогноз прибытия.</p>
-      </div>
-      <div class="card">
-        <h3>Избранные маршруты</h3>
-        <p>Уведомления и предупреждения о задержках.</p>
-      </div>
-      <div class="card">
-        <h3>Информация о дорогах</h3>
-        <p>Пробки, аварии и альтернативные маршруты.</p>
+      <div class="step card">
+        <span>3</span>
+        <h3>Общая картина</h3>
+        <p>
+          Ты видишь актуальную информацию,
+          основанную на живых данных.
+        </p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- AUDIENCE -->
 <section>
   <div class="container">
     <h2>Для кого этот сервис</h2>
     <p class="subtitle">
-      Для всех, кто ежедневно зависит от общественного транспорта
+      Для всех, кто пользуется общественным транспортом и ценит своё время
     </p>
     <div class="grid">
       <div class="card">
         <h3>Студенты и школьники</h3>
-        <p>Чтобы не опаздывать на учёбу.</p>
+        <p>
+          Чтобы не опаздывать на пары и не стоять на холоде без понимания ситуации.
+        </p>
       </div>
       <div class="card">
         <h3>Работающие люди</h3>
-        <p>Чтобы планировать дорогу заранее.</p>
+        <p>
+          Чтобы заранее планировать маршрут и принимать решение быстрее.
+        </p>
       </div>
       <div class="card">
-        <h3>Жители больших городов</h3>
-        <p>Где транспорт часто работает нестабильно.</p>
+        <h3>Горожане</h3>
+        <p>
+          Для всех, кто ежедневно зависит от автобусов, трамваев и маршруток.
+        </p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- MONETIZATION -->
 <section>
   <div class="container">
-    <h2>Как будет развиваться проект</h2>
+    <h2>Как проект будет развиваться</h2>
     <p class="subtitle">
-      Мы начинаем с бесплатного решения и масштабируемся
+      Мы начинаем с главного — точных данных,
+      и постепенно расширяем возможности сервиса
     </p>
     <div class="grid">
       <div class="card">
-        <h3>Freemium</h3>
-        <p>Бесплатный доступ к основной функции сервиса.</p>
+        <h3>Бесплатная версия</h3>
+        <p>
+          Основной функционал доступен всем пользователям
+          и решает главную боль.
+        </p>
       </div>
       <div class="card">
-        <h3>Подписка</h3>
-        <p>Премиум-функции для активных пользователей.</p>
+        <h3>Премиум-функции</h3>
+        <p>
+          Уведомления, история поездок,
+          персональные маршруты и отсутствие рекламы.
+        </p>
       </div>
       <div class="card">
-        <h3>Реклама и партнёрства</h3>
-        <p>Доход от рекламы и сотрудничества.</p>
+        <h3>Монетизация</h3>
+        <p>
+          Freemium-модель, подписка и реклама
+          без ущерба пользовательскому опыту.
+        </p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CTA -->
 <section class="cta" id="signup">
-  <h2>Присоединяйся первым</h2>
-  <p>Оставь email — мы сообщим о запуске приложения</p>
+  <h2>Мы запускаемся скоро</h2>
+  <p>
+    Оставь email — ты первым узнаешь о старте
+    и сможешь повлиять на развитие сервиса
+  </p>
   <form>
     <input type="email" placeholder="Ваш email" required>
-    <button type="submit">Отправить</button>
+    <button type="submit">Уведомить меня</button>
   </form>
 </section>
 
